@@ -16,8 +16,9 @@ import qrcode
 import sympy as sp
 import math as m
 
+PROXY_URL = "https://proxy.server:3128"
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0'}
-bot = Bot(token=TOKEN)
+bot = Bot(token=TOKEN, proxy = PROXY_URL)
 dp = Dispatcher(bot, storage=MemoryStorage())
 logging.basicConfig(format=u'%(filename)s [ LINE:%(lineno)+3s ]#%(levelname)+8s [%(asctime)s]  %(message)s',
                     level=logging.INFO)
