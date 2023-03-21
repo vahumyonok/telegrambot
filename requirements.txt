@@ -1,0 +1,6 @@
+aiogram
+requests
+BeautifulSoup4
+qrcode
+pillow
+sympy
